@@ -4,4 +4,4 @@ from ultralytics import YOLO
 model = YOLO('model/best.pt')
 
 # Run inference on data/1_min_cam_4.mp4 with arguments
-model.predict('data/1_min_cam_4.mp4', save=True, imgsz=320, conf=0.5)
+model.predict('data/1_min_cam_4.mp4', save=True, imgsz=320, conf=0.25,classes=[0,1,3,4])
